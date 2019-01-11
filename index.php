@@ -46,7 +46,16 @@ if($_POST){
             // 要改的地方 START ==============================================
             
             
-            $form->Textbox1 = $_POST['Textbox1'];
+            $form->Textbox1 = $_POST['textbox1'];
+            $form->Textbox3 = $_POST['textbox3'];
+            $form->Textbox5 = $_POST['textbox5'];
+            $form->Textbox7 = $_POST['textbox7'];
+            $form->Textbox9 = $_POST['textbox9'];
+            $form->Textbox10 = $_POST['textbox10'];
+            $form->Textbox12 = $_POST['textbox12'];
+            $form->RadioButton13 = $_POST['checkbox1'];
+            $form->RadioButton14 = $_POST['checkbox2'];
+            $form->TextArea15 = $_POST['textArea15'];
 
             // 要改的地方 END ==============================================
 
@@ -105,48 +114,41 @@ if($_POST){
                 </div>
           </div>
 
-          <div class="row">
-              <div class="col-md-12 mb-3">
-                  <label for="msg">範例輸入</label>
-                  <input name="msg" type="text" class="form-control" id="msg" placeholder="" value="" required>
-                  <div class="invalid-feedback">
-                    範例輸入 必填
-                  </div>
-                </div>
-          </div>
-
-          <div class="row">
-              <div class="col-md-12 mb-3">
-                  <label for="msg">範例輸入(數字)</label>
-                  <input name="num" type="text" class="form-control" id="num" placeholder="" value="0" required>
-                  <div class="invalid-feedback">
-                    範例輸入(數字) 必填
-                  </div>
-                </div>
-                </div>
+         
 
             <div class="row">
               <div class="col-md-6 mb-3">
                   <label for="msg">申請單位</label>
-                  <input name="textbox1" type="text" class="form-control" id="textbox1" placeholder=""  required>
+                  <input name="textbox1" type="text" class="form-control" id="textbox1" value=""  required>
                   <div class="invalid-feedback">
                     申請單位 必填
                   </div>
                 </div>
                
               <div class="col-md-6 mb-3">
-                  <label for="msg">申請人/分機</label>
-                  <input name="msg" type="text" class="form-control" id="msg" placeholder=""  required>
+                  <label for="msg">申請人</label>
+                  <input name="textbox3" type="text" class="form-control" id="textbox3" value=""  required>
                   <div class="invalid-feedback">
-                    申請人/分機 必填
+                    申請人 必填
                   </div>
               </div>
               </div>
 
               <div class="row">
               <div class="col-md-12 mb-3">
+                  <label for="msg">分機</label>
+                  <input name="textbox5" type="text" class="form-control" id="textbox5" value=""  required>
+                  <div class="invalid-feedback">
+                    分機必填
+                  </div>
+                </div>
+                </div>
+
+
+              <div class="row">
+              <div class="col-md-12 mb-3">
                   <label for="msg">申請日期</label>
-                  <input name="msg" type="date" class="form-control" id="msg" placeholder=""  required>
+                  <input name="textbox7" type="date" class="form-control" id="textbox7" placeholder="" value=""  required>
                   <div class="invalid-feedback">
                     申請日期 必填
                   </div>
@@ -156,7 +158,7 @@ if($_POST){
               <div class="row">
               <div class="col-md-5 mb-3">
                   <label for="msg">刊登時間</label>
-                  <input name="msg" type="datetime-local" class="form-control" id="msg" placeholder=""  required>
+                  <input name="textbox9" type="datetime-local" class="form-control" id="textbox9" placeholder="" value="" required>
                   <div class="invalid-feedback">
                     刊登時間 必填
                   </div>
@@ -164,7 +166,7 @@ if($_POST){
                 <label for="msg">至</label>
               <div class="col-md-5 mb-3">
                   <label for="msg"></label>
-                  <input name="msg" type="datetime-local" class="form-control" id="msg" placeholder=""  required>
+                  <input name="textbox10" type="datetime-local" class="form-control" id="textbox10" placeholder="" value=""  required>
                   <div class="invalid-feedback">
                     刊登時間 必填
                   </div>
@@ -174,7 +176,7 @@ if($_POST){
               <div class="row">
               <div class="col-md-12 mb-3">
                   <label for="msg">目的</label>
-                  <input name="msg" type="text" class="form-control" id="msg" placeholder=""  required>
+                  <input name="textbox12" type="text" class="form-control" id="textbox12" placeholder="" value="" required>
                   <div class="invalid-feedback">
                     目的 必填
                   </div>
@@ -185,7 +187,7 @@ if($_POST){
               <div class="row">
               <div class="col-md-4">
                 <label>申請事項</label><br/>
-                <label><input name="checkbox1" type="radio" value="1">Banner(1004x300像素)</label><br/>
+                <label><input name="checkbox1" type="radio" value="1" checked>Banner(1004x300像素)</label><br/>
                 <label><input name="checkbox1" type="radio" value="2">跑馬燈</label><br/>
                 <label><input name="checkbox1" type="radio" value="3">快速連結</label><br/>
                 <label><input name="checkbox1" type="radio" value="4">網頁內容</label><br/>
@@ -195,14 +197,14 @@ if($_POST){
                 </div>
               <div class="col-md-4">
                 <label>協助事項</label><br/>
-                <label><input name="checkbox2" type="radio" value="1">新增</label><br/>
+                <label><input name="checkbox2" type="radio" value="1" checked>新增</label><br/>
                 <label><input name="checkbox2" type="radio" value="2">修改</label><br/>
                 <label><input name="checkbox2" type="radio" value="3">刪除</label><br/>
                 </div>
               
               <div class="col-md-4">
                 <label>申請事項說明</label><br/>
-                <textarea rows="10" cols="50"></textarea>
+                <textarea name="textArea15" rows="10" cols="50">123</textarea>
               
               </div>
               </div>
